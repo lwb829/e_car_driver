@@ -43,7 +43,7 @@ void ADCUBodyCmd115::set_e_LampCmd_Active(int LampCmd_Active)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 7, 1);
+    to_set.set_value(x, 7, 1);
     data[0] += to_set.return_byte_t();
 }
 
@@ -54,7 +54,7 @@ void ADCUBodyCmd115::set_e_HeadLamp_Cmd(int HeadLamp_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 7, 1);
+    to_set.set_value(x, 7, 1);
     data[1] += to_set.return_byte_t();
 }
 
@@ -65,7 +65,7 @@ void ADCUBodyCmd115::set_e_DblFlashLamp_Cmd(int DblFlashLamp_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 6, 1);
+    to_set.set_value(x, 6, 1);
     data[1] += to_set.return_byte_t();
 }
 
@@ -76,7 +76,7 @@ void ADCUBodyCmd115::set_e_TurnLLamp_Cmd(int TurnLLamp_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 5, 1);
+    to_set.set_value(x, 5, 1);
     data[1] += to_set.return_byte_t();
 }
 
@@ -87,7 +87,7 @@ void ADCUBodyCmd115::set_e_TurnRLamp_Cmd(int TurnRLamp_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 4, 1);
+    to_set.set_value(x, 4, 1);
     data[1] += to_set.return_byte_t();
 }
 
@@ -98,7 +98,7 @@ void ADCUBodyCmd115::set_e_BackLamp_Cmd(int BackLamp_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 3, 1);
+    to_set.set_value(x, 3, 1);
     data[1] += to_set.return_byte_t();
 }
 
@@ -109,7 +109,7 @@ void ADCUBodyCmd115::set_e_Buzzer_Cmd(int Buzzer_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 2, 1);
+    to_set.set_value(x, 2, 1);
     data[1] += to_set.return_byte_t();
 }
 
@@ -120,7 +120,7 @@ void ADCUBodyCmd115::set_e_Horn_Cmd(int Horn_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 1, 1);
+    to_set.set_value(x, 1, 1);
     data[1] += to_set.return_byte_t();
 }
 
@@ -131,7 +131,7 @@ void ADCUBodyCmd115::set_e_RunLamp_Cmd(int RunLamp_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 1);
+    to_set.set_value(x, 0, 1);
     data[1] += to_set.return_byte_t();
 }
 
@@ -142,7 +142,7 @@ void ADCUBodyCmd115::set_e_BrkLamp_Cmd(int BrkLamp_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 7, 1);
+    to_set.set_value(x, 7, 1);
     data[2] += to_set.return_byte_t();
 }
 
@@ -153,7 +153,7 @@ void ADCUBodyCmd115::set_e_FogLamp_Cmd(int FogLamp_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 6, 1);
+    to_set.set_value(x, 6, 1);
     data[2] += to_set.return_byte_t();
 }
 
@@ -164,7 +164,7 @@ void ADCUBodyCmd115::set_e_WidthLamp_Cmd(int WidthLamp_Cmd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 5, 1);
+    to_set.set_value(x, 5, 1);
     data[2] += to_set.return_byte_t();
 }
 
@@ -175,7 +175,7 @@ void ADCUBodyCmd115::set_e_LampCmd_RollCnt(int LampCmd_RollCnt)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 4);
+    to_set.set_value(x, 0, 4);
     data[6] += to_set.return_byte_t();
 }
 
@@ -186,6 +186,6 @@ void ADCUBodyCmd115::set_e_LampCmd_Checksum(int LampCmd_Checksum)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 8);
+    to_set.set_value(x, 0, 8);
     data[7] += to_set.return_byte_t();
 }

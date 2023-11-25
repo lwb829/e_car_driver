@@ -53,10 +53,19 @@ file(GLOB MSGS_PATH ./mgs/*.msg)
 ## Generate messages in the 'msg' folder
  add_message_files(
    FILES
-   BrakeCmd.msg
-   DriverCmd.msg
-   ParkCmd.msg
-   SteerCmd.msg
+   ADCU_BrakeCmd.msg
+   ADCU_DriveCmd.msg
+   ADCU_ParkCmd.msg
+   ADCU_SteerCmd.msg
+   ADCU_BodyCmd.msg
+   ADCU_CldBodyCmd.msg
+   ADCU_CldDrvCmd.msg
+   ADCU_CldPowerCmd.msg
+   ADCU_CrashClrCmd.msg
+   ADCU_PowerCmd.msg
+   ADCU_SweepCmd.msg
+   ADCU_TripClear.msg
+   PCU_PowerCmd.msg
  )
 
 ## Generate services in the 'srv' folder

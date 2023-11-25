@@ -36,7 +36,7 @@ void ADCUBrakeCmd111::set_e_Brk_Active(int Brk_Active)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 7, 1);
+    to_set.set_value(x, 7, 1);
     data[0] += to_set.return_byte_t();
 }
 
@@ -47,7 +47,7 @@ void ADCUBrakeCmd111::set_e_Brk_CtrlMode(int Brk_CtrlMode)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 5, 2);
+    to_set.set_value(x, 5, 2);
     data[0] += to_set.return_byte_t();
 }
 
@@ -58,7 +58,7 @@ void ADCUBrakeCmd111::set_e_Brk_TgtPedpos(double Brk_TgtPedpos)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 8);
+    to_set.set_value(x, 0, 8);
     data[1] += to_set.return_byte_t();
 }
 
@@ -107,7 +107,7 @@ void ADCUBrakeCmd111::set_e_BrkCmd_RollCnt(int BrkCmd_RollCnt)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 4);
+    to_set.set_value(x, 0, 4);
     data[6] += to_set.return_byte_t();
 }
 
@@ -118,6 +118,6 @@ void ADCUBrakeCmd111::set_e_BrkCmd_Checksum(int BrkCmd_Checksum)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 8);
+    to_set.set_value(x, 0, 8);
     data[7] += to_set.return_byte_t();
 }

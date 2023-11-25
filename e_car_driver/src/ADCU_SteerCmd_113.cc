@@ -35,7 +35,7 @@ void ADCUSteerCmd113::set_e_Str_Active(int Str_Active)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x,7,1);
+    to_set.set_value(x,7,1);
     data[0] += to_set.return_byte_t();
 }
 
@@ -46,7 +46,7 @@ void ADCUSteerCmd113::set_e_Str_CtrlMode(int Str_CtrlMode)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 5, 2);
+    to_set.set_value(x, 5, 2);
     data[0] += to_set.return_byte_t();
 }
 
@@ -76,7 +76,7 @@ void ADCUSteerCmd113::set_e_Str_TgtAngleSpd(double Str_TgtAngleSpd)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 8);
+    to_set.set_value(x, 0, 8);
     data[5] += to_set.return_byte_t();
 }
 
@@ -87,7 +87,7 @@ void ADCUSteerCmd113::set_e_StrCmd_RollCnt(int StrCmd_RollCnt)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 4);
+    to_set.set_value(x, 0, 4);
     data[6] += to_set.return_byte_t();
 }
 
@@ -98,6 +98,6 @@ void ADCUSteerCmd113::set_e_StrCmd_Checksum(int StrCmd_Checksum)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 8);
+    to_set.set_value(x, 0, 8);
     data[7] += to_set.return_byte_t();
 }

@@ -36,7 +36,7 @@ void ADCUDriveCmd114::set_e_Drv_Active(int Drv_Active)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 7, 1);
+    to_set.set_value(x, 7, 1);
     data[0] += to_set.return_byte_t();
 }
 
@@ -47,7 +47,7 @@ void ADCUDriveCmd114::set_e_Drv_CtrlMode(int Drv_CtrlMode)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 5, 2);
+    to_set.set_value(x, 5, 2);
     data[0] += to_set.return_byte_t();
 }
 
@@ -58,7 +58,7 @@ void ADCUDriveCmd114::set_e_Drv_TgtGear(int Drv_TgtGear)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 2);
+    to_set.set_value(x, 0, 2);
     data[0] += to_set.return_byte_t();
 }
 
@@ -69,7 +69,7 @@ void ADCUDriveCmd114::set_e_Drv_TgtPedpos(int Drv_TgtPedpos)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 8);
+    to_set.set_value(x, 0, 8);
     data[1] += to_set.return_byte_t();
 }
 
@@ -99,7 +99,7 @@ void ADCUDriveCmd114::set_e_DrvCmd0_RollCnt(int DrvCmd0_RollCnt)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 4);
+    to_set.set_value(x, 0, 4);
     data[6] += to_set.return_byte_t();
 }
 
@@ -110,6 +110,6 @@ void ADCUDriveCmd114::set_e_DrvCmd0_Checksum(int DrvCmd0_Checksum)
     uint8_t a = 0;
 
     Byte to_set(a);
-    to.set.set_value(x, 0, 8);
+    to_set.set_value(x, 0, 8);
     data[7] += to_set.return_byte_t();
 }
