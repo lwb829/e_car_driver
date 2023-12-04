@@ -535,7 +535,5 @@ int main(int argc, char **argv)
     pub_can = nh.advertise<can_msgs::Frame>("/sent_messages", 10, true);
 
     ros::Timer set_speed = nh.createTimer(ros::Duration(1/50.0), timer_callback);
-    ros::spin();
-
-    return 0;
+    
 }

@@ -194,7 +194,6 @@ static void power_callback(const e_car_driver_msgs::ADCU_PowerCmd &msg)
         can_power.data[i] = *A;
         A += 1;
     }
-    pub_can.publish(can_power);
 }
 
 static void steer_callback(const e_car_driver_msgs:ADCU_SteerCmd &msg)
@@ -256,7 +255,6 @@ static void body_callback(const e_car_driver_msgs::ADCU_BodyCmd &msg)
         can_body.data[i] = *A;
         A += 1;
     }
-    pub_can.publish(can_body);
 }
 
 static void sweep_callback(const e_car_driver_msgs::ADCU_SweepCmd &msg)
@@ -285,7 +283,6 @@ static void sweep_callback(const e_car_driver_msgs::ADCU_SweepCmd &msg)
         can_sweep.data[i] = *A;
         A += 1;
     }
-    pub_can.publish(can_sweep);
 }
 
 static void crash_callback(const e_car_driver_msgs::ADCU_CrashClrCmd &msg)
@@ -311,7 +308,6 @@ static void crash_callback(const e_car_driver_msgs::ADCU_CrashClrCmd &msg)
         can_crash_clr.data[i] = *A;
         A += 1;
     }
-    pub_can.publish(can_crash_clr);
 }
 
 static void cld_body_callback(const e_car_driver_msgs::ADCU_CldBodyCmd &msg)
@@ -343,8 +339,7 @@ static void cld_body_callback(const e_car_driver_msgs::ADCU_CldBodyCmd &msg)
     {
         can_cld_body.data[i] = *A;
         A += 1;
-    };
-    pub_can.publish(can_cld_body);
+    }
 }
 
 static void cld_power_callback(const e_car_driver_msgs::ADCU_CldPowerCmd &msg)
@@ -384,7 +379,6 @@ static void cld_power_callback(const e_car_driver_msgs::ADCU_CldPowerCmd &msg)
         can_cld_power.data[i] = *A;
         A += 1;
     }
-    pub_can.publish(can_cld_power);
 }
 
 static void cld_drive_callback(const e_car_driver_msgs::ADCU_CldDrvCmd &msg)
@@ -413,7 +407,6 @@ static void cld_drive_callback(const e_car_driver_msgs::ADCU_CldDrvCmd &msg)
         can_cld_drive.data[i] = *A;
         A += 1;
     }
-    pub_can.publish(can_cld_drive);
 }
 
 static void pcu_power_callback(const e_car_driver_msgs::PCU_PowerCmd &msg)
@@ -443,99 +436,4 @@ static void pcu_power_callback(const e_car_driver_msgs::PCU_PowerCmd &msg)
         can_pcu_power.data[i] = *A;
         A += 1;
     }
-    pub_can.publish(can_pcu_power);
-}
-
-void timer_callback(const ros::TimerEvent &te)
-{
-    int time_diff;
-    int now;
-    now = ros::Time::now().toNec();
-
-    // brake
-    if(now - brake_prev_t>30000000)
-    {
-        for (uint i = 0; i < 8; i++)
-        {
-            can_brake.id = brake_command.ID;
-            can_brake.data[i] = 0;
-        }
-        pub_can.publish(can_brake);
-    }
-    else
-    {
-        pub_can.publish(can_brake);
-    }
-
-    //park
-    if(now - park_prev_t>30000000)
-    {
-        for (uint i = 0; i < 8; i++)
-        {
-            can_park.id = park_command.ID;
-            can_park.data[i] = 0;
-        }
-        pub_can.publish(can_park);
-    }
-    else
-    {
-        pub_can.publish(can_park);
-    }
-
-    //drive
-    if(now - drive_prev_t>30000000)
-    {
-        for (uint i = 0; i < 8; i++)
-        {
-            can_drive.id = drive_command.ID;
-            can_drive.data[i] = 0;
-        }
-        pub_can.publish(can_drive);
-    }
-    else
-    {
-        pub_can.publish(can_drive);
-    }
-
-    //steer
-    if(now - steer_prev_t>30000000)
-    {
-        for (uint i = 0; i < 8; i++)
-        {
-            can_steer.id = steer_command.ID;
-            can_steer.data[i] = 0;
-        }
-        pub_can.publish(can_steer);
-    }
-    else
-    {
-        pub_can.publish(can_steer);
-    }
-
-}
-
-int main(int argc, char **argv)
-{
-    ros::init(argc, argv, "e_car_command_node");
-    ros::NodeHandle nh;
-    
-    ros::Subscriber sub_brake = nh.subscribe("/e_car_driver/brake_command", 1, brake_callback);//文件夹？？
-    ros::Subscriber sub_park = nh.subscribe("/e_car_driver/park_command", 1, park_callback);
-    ros::Subscriber sub_drive = nh.subscribe("/e_car_driver/drive_command", 1, drive_callback);
-    ros::Subscriber sub_steer = nh.subscribe("/e_car_driver/steer_command", 1, steer_callback);
-    ros::Subscriber sub_power = nh.subscribe("/e_car_driver/power_command", 1, power_callback);
-    ros::Subscriber sub_sweep = nh.subscribe("/e_car_driver/sweep_command", 1, sweep_callback);
-    ros::Subscriber sub_cld_power = nh.subscribe("/e_car_driver/cld_power_command", 1, cld_power_callback);
-    ros::Subscriber sub_cld_drive = nh.subscribe("/e_car_driver/cld_drive_command", 1, cld_drive_callback);
-    ros::Subscriber sub_pcu_power = nh.subscribe("/e_car_driver/pcu_power_command", 1, pcu_power_callback);
-    ros::Subscriber sub_crash = nh.subscribe("/e_car_driver/crash_command", 1, crash_callback);
-    ros::Subscriber sub_body = nh.subscribe("/e_car_driver/body_command", 1, body_callback);
-    ros::Subscriber sub_cld_body = nh.subscribe("/e_car_driver/cld_body_command", 1, cld_body_callback);
-
-    pub_can = nh.advertise<can_msgs::Frame>("/sent_messages", 10, true);
-
-    ros::Timer set_speed = nh.createTimer(ros::Duration(1/50.0), timer_callback);
-    ros::spin();
-
-    return 0;
 }
