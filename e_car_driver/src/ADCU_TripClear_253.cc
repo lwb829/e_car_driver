@@ -7,12 +7,12 @@ ADCUTripClear253::ADCUTripClear253() { Reset(); } // 在构造函数中调用了
 
 void ADCUTripClear253::UpdateData(int TotalTripClear_Cmd, int RmtDrvTripClear_Cmd, int AutoDrvTripClear_Cmd, int CldDrvTripClear_Cmd, int TripClear_RollCnt, int TripClear_Checksum)
 {
-    set_e_TotalTripClear_Cmd(int TotalTripClear_Cmd); 
-    set_e_RmtDrvTripClear_Cmd(int RmtDrvTripClear_Cmd);
-    set_e_AutoDrvTripClear_Cmd(int AutoDrvTripClear_Cmd); 
-    set_e_CldDrvTripClear_Cmd(int CldDrvTripClear_Cmd);
-    set_e_TripClear_RollCnt(int TripClear_RollCnt); 
-    set_e_TripClear_Checksum(int TripClear_Checksum); 
+    set_e_TotalTripClear_Cmd(TotalTripClear_Cmd); 
+    set_e_RmtDrvTripClear_Cmd(RmtDrvTripClear_Cmd);
+    set_e_AutoDrvTripClear_Cmd(AutoDrvTripClear_Cmd); 
+    set_e_CldDrvTripClear_Cmd(CldDrvTripClear_Cmd);
+    set_e_TripClear_RollCnt(TripClear_RollCnt); 
+    set_e_TripClear_Checksum(TripClear_Checksum); 
 }
 
 void ADCUTripClear253::Reset()

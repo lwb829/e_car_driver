@@ -7,16 +7,16 @@ PCUPowerCmd127::PCUPowerCmd127() { Reset(); } // 在构造函数中调用了Rese
 
 void PCUPowerCmd127::UpdateData(int ADChasPwrup_Cmd, int AD12VMCPwrup_Cmd, int AD12VSC1Pwrup_Cmd, int AD12VSC2Pwrup_Cmd, int AD12VSC3Pwrup_Cmd, int AD12VSC4Pwrup_Cmd, int AD12VSC5Pwrup_Cmd, int AD12VSC6Pwrup_Cmd, int PwrCmd_RollCnt, int PwrCmd_Checksum)
 {
-    set_e_ADChasPwrup_Cmd(int ADChasPwrup_Cmd); 
-    set_e_AD12VMCPwrup_Cmd(int AD12VMCPwrup_Cmd); 
-    set_e_AD12VSC1Pwrup_Cmd(int AD12VSC1Pwrup_Cmd);
-    set_e_AD12VSC2Pwrup_Cmd(int AD12VSC2Pwrup_Cmd); 
-    set_e_AD12VSC3Pwrup_Cmd(int AD12VSC3Pwrup_Cmd); 
-    set_e_AD12VSC4Pwrup_Cmd(int AD12VSC4Pwrup_Cmd);
-    set_e_AD12VSC5Pwrup_Cmd(int AD12VSC5Pwrup_Cmd); 
-    set_e_AD12VSC6Pwrup_Cmd(int AD12VSC6Pwrup_Cmd); 
-    set_e_PwrCmd_RollCnt(int PwrCmd_RollCnt); 
-    set_e_PwrCmd_Checksum(int PwrCmd_Checksum); 
+    set_e_ADChasPwrup_Cmd(ADChasPwrup_Cmd); 
+    set_e_AD12VMCPwrup_Cmd(AD12VMCPwrup_Cmd); 
+    set_e_AD12VSC1Pwrup_Cmd(AD12VSC1Pwrup_Cmd);
+    set_e_AD12VSC2Pwrup_Cmd(AD12VSC2Pwrup_Cmd); 
+    set_e_AD12VSC3Pwrup_Cmd(AD12VSC3Pwrup_Cmd); 
+    set_e_AD12VSC4Pwrup_Cmd(AD12VSC4Pwrup_Cmd);
+    set_e_AD12VSC5Pwrup_Cmd(AD12VSC5Pwrup_Cmd); 
+    set_e_AD12VSC6Pwrup_Cmd(AD12VSC6Pwrup_Cmd); 
+    set_e_PwrCmd_RollCnt(PwrCmd_RollCnt); 
+    set_e_PwrCmd_Checksum(PwrCmd_Checksum); 
 }
 
 void PCUPowerCmd127::Reset()

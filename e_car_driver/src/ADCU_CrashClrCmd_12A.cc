@@ -7,12 +7,12 @@ ADCUCrashClrCmd12A::ADCUCrashClrCmd12A() { Reset(); } // 在构造函数中调�
 
 void ADCUCrashClrCmd12A::UpdateData(int CrashClearCmd_Valid, int CrashClear_Cmd, int EmgcSwhClearCmd_Valid, int EmgcSwhClear_Cmd, int CrashClr_RollCnt, int CrashClr_Checksum)
 {
-    set_e_CrashClearCmd_Valid(int CrashClearCmd_Valid); 
-    set_e_CrashClear_Cmd(int CrashClear_Cmd); 
-    set_e_EmgcSwhClearCmd_Valid(int EmgcSwhClearCmd_Valid);
-    set_e_EmgcSwhClear_Cmd(int EmgcSwhClear_Cmd); 
-    set_e_CrashClr_RollCnt(int CrashClr_RollCnt);
-    set_e_CrashClr_Checksum(int CrashClr_Checksum);
+    set_e_CrashClearCmd_Valid(CrashClearCmd_Valid); 
+    set_e_CrashClear_Cmd(CrashClear_Cmd); 
+    set_e_EmgcSwhClearCmd_Valid(EmgcSwhClearCmd_Valid);
+    set_e_EmgcSwhClear_Cmd(EmgcSwhClear_Cmd); 
+    set_e_CrashClr_RollCnt(CrashClr_RollCnt);
+    set_e_CrashClr_Checksum(CrashClr_Checksum);
 }
 
 void ADCUCrashClrCmd12A::Reset()

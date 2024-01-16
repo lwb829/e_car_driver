@@ -7,13 +7,13 @@ ADCUDriveCmd114::ADCUDriveCmd114() { Reset(); } // 在构造函数中调用了Re
 
 void ADCUDriveCmd114::UpdateData(int Drv_Active, int Drv_CtrlMode, int Drv_TgtGear, int Drv_TgtPedpos, double Drv_TgtVehSpd0, int DrvCmd0_RollCnt, int DrvCmd0_Checksum)
 {
-    void set_e_Drv_Active(Drv_Active); 
-    void set_e_Drv_CtrlMode(Drv_CtrlMode); 
-    void set_e_Drv_TgtGear(Drv_TgtGear); 
-    void set_e_Drv_TgtPedpos(Drv_TgtPedpos);
-    void set_e_Drv_TgtVehSpd0(Drv_TgtVehSpd0); 
-    void set_e_DrvCmd0_RollCnt(DrvCmd0_RollCnt);
-    void set_e_DrvCmd0_Checksum(DrvCmd0_Checksum); 
+     set_e_Drv_Active(Drv_Active); 
+    set_e_Drv_CtrlMode(Drv_CtrlMode); 
+    set_e_Drv_TgtGear(Drv_TgtGear); 
+     set_e_Drv_TgtPedpos(Drv_TgtPedpos);
+     set_e_Drv_TgtVehSpd0(Drv_TgtVehSpd0); 
+     set_e_DrvCmd0_RollCnt(DrvCmd0_RollCnt);
+     set_e_DrvCmd0_Checksum(DrvCmd0_Checksum); 
 }
 
 void ADCUDriveCmd114::Reset()

@@ -7,13 +7,13 @@ ADCUBrakeCmd111::ADCUBrakeCmd111() { Reset(); } // 在构造函数中调用了Re
 
 void ADCUBrakeCmd111::UpdateData(int Brk_Active, int Brk_CtrlMode, double Brk_TgtPedpos, double Brk_TgtPress, double Brk_TgtAccSpd, int BrkCmd_RollCnt, int BrkCmd_Checksum)
 {
-    set_e_Brk_Active(int Brk_Active); 
-    set_e_Brk_CtrlMode(int Brk_CtrlMode); 
-    set_e_Brk_TgtPedpos(double Brk_TgtPedpos);
-    set_e_Brk_TgtPress(double Brk_TgtPress); 
-    set_e_Brk_TgtAccSpd(double Brk_TgtAccSpd); 
-    set_e_BrkCmd_RollCnt(int BrkCmd_RollCnt); 
-    set_e_BrkCmd_Checksum(int BrkCmd_Checksum); 
+    set_e_Brk_Active(Brk_Active); 
+    set_e_Brk_CtrlMode(Brk_CtrlMode); 
+    set_e_Brk_TgtPedpos(Brk_TgtPedpos);
+    set_e_Brk_TgtPress(Brk_TgtPress); 
+    set_e_Brk_TgtAccSpd(Brk_TgtAccSpd); 
+    set_e_BrkCmd_RollCnt(BrkCmd_RollCnt); 
+    set_e_BrkCmd_Checksum(BrkCmd_Checksum); 
 }
 
 void ADCUBrakeCmd111::Reset()

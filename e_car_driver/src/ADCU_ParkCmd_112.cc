@@ -7,10 +7,10 @@ ADCUParkCmd112::ADCUParkCmd112() { Reset(); } // 在构造函数中调用了Rese
 
 void ADCUParkCmd112::UpdateData(int Prk_Active, int Prk_Enable, int PrkCmd_RollCnt, int PrkCmd_Checksum)
 {
-    set_e_Prk_Active(int Prk_Active);
-    set_e_Prk_Enable(int Prk_Enable);
-    set_e_PrkCmd_RollCnt(int PrkCmd_RollCnt); 
-    set_e_PrkCmd_Checksum(int PrkCmd_Checksum);
+    set_e_Prk_Active(Prk_Active);
+    set_e_Prk_Enable(Prk_Enable);
+    set_e_PrkCmd_RollCnt(PrkCmd_RollCnt); 
+    set_e_PrkCmd_Checksum(PrkCmd_Checksum);
 }
 
 void ADCUParkCmd112::Reset()

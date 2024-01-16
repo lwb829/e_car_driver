@@ -7,15 +7,15 @@ ADCUCldDrvCmd118::ADCUCldDrvCmd118() { Reset(); } // 在构造函数中调用了
 
 void ADCUCldDrvCmd118::UpdateData(int Cld_CtrlActive, int Cld_PrkEnable, int Cld_DriveMode, int Cld_TgtGear, double Cld_TgtThrotVal, double Cld_TgtBrkVal, double Cld_TgtStrAngle, int CldDrvCmd_RollCnt, int CldDrvCmd_Checksum)
 {
-    set_e_Cld_CtrlActive(int Cld_CtrlActive); 
-    set_e_Cld_PrkEnable(int Cld_PrkEnable);
-    set_e_Cld_DriveMode(int Cld_DriveMode);
-    set_e_Cld_TgtGear(int Cld_TgtGear); 
-    set_e_Cld_TgtThrotVal(double Cld_TgtThrotVal); 
-    set_e_Cld_TgtBrkVal(double Cld_TgtBrkVal); 
-    set_e_Cld_TgtStrAngle(double Cld_TgtStrAngle); 
-    set_e_CldDrvCmd_RollCnt(int CldDrvCmd_RollCnt);
-    set_e_CldDrvCmd_Checksum(int CldDrvCmd_Checksum); 
+    set_e_Cld_CtrlActive(Cld_CtrlActive); 
+    set_e_Cld_PrkEnable(Cld_PrkEnable);
+    set_e_Cld_DriveMode(Cld_DriveMode);
+    set_e_Cld_TgtGear(Cld_TgtGear); 
+    set_e_Cld_TgtThrotVal(Cld_TgtThrotVal); 
+    set_e_Cld_TgtBrkVal(Cld_TgtBrkVal); 
+    set_e_Cld_TgtStrAngle(Cld_TgtStrAngle); 
+    set_e_CldDrvCmd_RollCnt(CldDrvCmd_RollCnt);
+    set_e_CldDrvCmd_Checksum(CldDrvCmd_Checksum); 
 }
 
 void ADCUCldDrvCmd118::Reset()

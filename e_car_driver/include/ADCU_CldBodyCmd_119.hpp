@@ -17,7 +17,7 @@ public:
 
 private:
     // 起始字节：4；起始位：34；信号长度：1；
-    void set_e_Cld_WidthLamp_Cmde(int Cld_WidthLamp_Cmd); // 远程驾驶示廓灯开启
+    void set_e_Cld_WidthLamp_Cmd(int Cld_WidthLamp_Cmd); // 远程驾驶示廓灯开启
 
     // 起始字节：4；起始位：33；信号长度：1；
     void set_e_Cld_BrkLamp_Cmd(int Cld_BrkLamp_Cmd); // 远程驾驶制动灯开启

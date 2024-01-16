@@ -7,15 +7,15 @@ ADCUSweepCmd151::ADCUSweepCmd151() { Reset(); } // 在构造函数中调用了Re
 
 void ADCUSweepCmd151::UpdateData(int Tgt_SweepMode, int Sweep_Cmd, int ShakeDust_Cmd, int GbgDump_Cmd, int FtFenderCtrl_Cmd, int SweepEStop_Cmd, int BrushWtrValFbd_Cmd, int SweepCmd_RollCnt, int SweepCmd_Checksum)
 {
-    set_e_Tgt_SweepMode(int Tgt_SweepMode); 
-    set_e_Sweep_Cmd(int Sweep_Cmd); 
-    set_e_ShakeDust_Cmd(int ShakeDust_Cmd); 
-    set_e_GbgDump_Cmd(int GbgDump_Cmd); 
-    set_e_FtFenderCtrl_Cmd(int FtFenderCtrl_Cmd); 
-    set_e_SweepEStop_Cmd(int SweepEStop_Cmd); 
-    set_e_BrushWtrValFbd_Cmd(int BrushWtrValFbd_Cmd);
-    set_e_SweepCmd_RollCnt(int SweepCmd_RollCnt);
-    set_e_SweepCmd_Checksum(int SweepCmd_Checksum);
+    set_e_Tgt_SweepMode(Tgt_SweepMode); 
+    set_e_Sweep_Cmd(Sweep_Cmd); 
+    set_e_ShakeDust_Cmd(ShakeDust_Cmd); 
+    set_e_GbgDump_Cmd(GbgDump_Cmd); 
+    set_e_FtFenderCtrl_Cmd(FtFenderCtrl_Cmd); 
+    set_e_SweepEStop_Cmd(SweepEStop_Cmd); 
+    set_e_BrushWtrValFbd_Cmd(BrushWtrValFbd_Cmd);
+    set_e_SweepCmd_RollCnt(SweepCmd_RollCnt);
+    set_e_SweepCmd_Checksum(SweepCmd_Checksum);
 }
 
 void ADCUSweepCmd151::Reset()

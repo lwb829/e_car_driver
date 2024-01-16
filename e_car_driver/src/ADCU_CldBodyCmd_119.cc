@@ -7,19 +7,19 @@ ADCUCldBodyCmd119::ADCUCldBodyCmd119() { Reset(); } // 在构造函数中调用�
 
 void ADCUCldBodyCmd119::UpdateData(int Cld_WidthLamp_Cmd, int Cld_BrkLamp_Cmd, int Cld_FogLamp_Cmd, int Cld_HeadLamp_Cmd, int Cld_DblFlashLamp_Cmd, int Cld_TurnLLamp_Cmd, int Cld_TurnRLamp_Cmd, int Cld_BackLamp_Cmd, int Cld_Buzzer_Cmd, int Cld_Horn_Cmd, int Cld_RunLamp_Cmd, int CldBodyCmd_RollCnt, int CldBodyCmd_Checksum)
 {
-    set_e_Cld_WidthLamp_Cmde(int Cld_WidthLamp_Cmd); 
-    set_e_Cld_BrkLamp_Cmd(int Cld_BrkLamp_Cmd); 
-    set_e_Cld_FogLamp_Cmd(int Cld_FogLamp_Cmd); 
-    set_e_Cld_HeadLamp_Cmd(int Cld_HeadLamp_Cmd); 
-    set_e_Cld_DblFlashLamp_Cmd(int Cld_DblFlashLamp_Cmd); 
-    set_e_Cld_TurnLLamp_Cmd(int Cld_TurnLLamp_Cmd); 
-    set_e_Cld_TurnRLamp_Cmd(int Cld_TurnRLamp_Cmd);
-    set_e_Cld_BackLamp_Cmd(int Cld_BackLamp_Cmd);
-    set_e_Cld_Buzzer_Cmd(int Cld_Buzzer_Cmd); 
-    set_e_Cld_Horn_Cmd(int Cld_Horn_Cmd); 
-    set_e_Cld_RunLamp_Cmd(int Cld_RunLamp_Cmd); 
-    set_e_CldBodyCmd_RollCnt(int CldBodyCmd_RollCnt);
-    set_e_CldBodyCmd_Checksum(int CldBodyCmd_Checksum); 
+    set_e_Cld_WidthLamp_Cmd(Cld_WidthLamp_Cmd); 
+    set_e_Cld_BrkLamp_Cmd(Cld_BrkLamp_Cmd); 
+    set_e_Cld_FogLamp_Cmd(Cld_FogLamp_Cmd); 
+    set_e_Cld_HeadLamp_Cmd(Cld_HeadLamp_Cmd); 
+    set_e_Cld_DblFlashLamp_Cmd(Cld_DblFlashLamp_Cmd); 
+    set_e_Cld_TurnLLamp_Cmd(Cld_TurnLLamp_Cmd); 
+    set_e_Cld_TurnRLamp_Cmd(Cld_TurnRLamp_Cmd);
+    set_e_Cld_BackLamp_Cmd(Cld_BackLamp_Cmd);
+    set_e_Cld_Buzzer_Cmd(Cld_Buzzer_Cmd); 
+    set_e_Cld_Horn_Cmd(Cld_Horn_Cmd); 
+    set_e_Cld_RunLamp_Cmd(Cld_RunLamp_Cmd); 
+    set_e_CldBodyCmd_RollCnt(CldBodyCmd_RollCnt);
+    set_e_CldBodyCmd_Checksum(CldBodyCmd_Checksum); 
 }
 
 void ADCUCldBodyCmd119::Reset()

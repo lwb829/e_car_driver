@@ -7,26 +7,26 @@ ADCUPowerCmd117::ADCUPowerCmd117() { Reset(); } // 在构造函数中调用了Re
 
 void ADCUPowerCmd117::UpdateData(int ADVehPwrup_Cmd, int ADChasPwrup_Cmd, int AD12VMCPwrup_Cmd, int AD12VRCPwrup_Cmd, int AD24VMCPwrup_Cmd, int ADPA12VPwrup_Cmd, int ADPA24VPwrup_Cmd, int AD12VSC1Pwrup_Cmd, int AD12VSC2Pwrup_Cmd, int AD12VSC3Pwrup_Cmd, int AD12VSC4Pwrup_Cmd, int AD12VSC5Pwrup_Cmd, int AD12VSC6Pwrup_Cmd, int AD12VMCPwrdownCnfm_Cmd, int AD12VRCPwrdownCnfm_Cmd, int AD24VMCPwrdownCnfm_Cmd, int ADPA12VPwrdownCnfm_Cmd, int ADPA24VPwrdwnCnfm_Cmd, int PwrCmd_RollCnt, int PwrCmd_Checksum)
 {
-    set_e_ADVehPwrup_Cmd(int ADVehPwrup_Cmd); 
-    set_e_ADChasPwrup_Cmd(int ADChasPwrup_Cmd); 
-    set_e_AD12VMCPwrup_Cmd(int AD12VMCPwrup_Cmd); 
-    set_e_AD12VRCPwrup_Cmd(int AD12VRCPwrup_Cmd); 
-    set_e_AD24VMCPwrup_Cmd(int AD24VMCPwrup_Cmd); 
-    set_e_ADPA12VPwrup_Cmd(int ADPA12VPwrup_Cmd); 
-    set_e_ADPA24VPwrup_Cmd(int ADPA24VPwrup_Cmd); 
-    set_e_AD12VSC1Pwrup_Cmd(int AD12VSC1Pwrup_Cmd); 
-    set_e_AD12VSC2Pwrup_Cmd(int AD12VSC2Pwrup_Cmd); 
-    set_e_AD12VSC3Pwrup_Cmd(int AD12VSC3Pwrup_Cmd); 
-    set_e_AD12VSC4Pwrup_Cmd(int AD12VSC4Pwrup_Cmd); 
-    set_e_AD12VSC5Pwrup_Cmd(int AD12VSC5Pwrup_Cmd); 
-    set_e_AD12VSC6Pwrup_Cmd(int AD12VSC6Pwrup_Cmd); 
-    set_e_AD12VMCPwrdownCnfm_Cmd(int AD12VMCPwrdownCnfm_Cmd); 
-    set_e_AD12VRCPwrdownCnfm_Cmd(int AD12VRCPwrdownCnfm_Cmd); 
-    set_e_AD24VMCPwrdownCnfm_Cmd(int AD24VMCPwrdownCnfm_Cmd); 
-    set_e_ADPA12VPwrdownCnfm_Cmd(int ADPA12VPwrdownCnfm_Cmd); 
-    set_e_ADPA24VPwrdwnCnfm_Cmd(int ADPA24VPwrdwnCnfm_Cmd); 
-    set_e_PwrCmd_RollCnt(int PwrCmd_RollCnt); 
-    set_e_PwrCmd_Checksum(int PwrCmd_Checksum); 
+    set_e_ADVehPwrup_Cmd(ADVehPwrup_Cmd); 
+    set_e_ADChasPwrup_Cmd(ADChasPwrup_Cmd); 
+    set_e_AD12VMCPwrup_Cmd(AD12VMCPwrup_Cmd); 
+    set_e_AD12VRCPwrup_Cmd(AD12VRCPwrup_Cmd); 
+    set_e_AD24VMCPwrup_Cmd(AD24VMCPwrup_Cmd); 
+    set_e_ADPA12VPwrup_Cmd(ADPA12VPwrup_Cmd); 
+    set_e_ADPA24VPwrup_Cmd(ADPA24VPwrup_Cmd); 
+    set_e_AD12VSC1Pwrup_Cmd(AD12VSC1Pwrup_Cmd); 
+    set_e_AD12VSC2Pwrup_Cmd(AD12VSC2Pwrup_Cmd); 
+    set_e_AD12VSC3Pwrup_Cmd(AD12VSC3Pwrup_Cmd); 
+    set_e_AD12VSC4Pwrup_Cmd(AD12VSC4Pwrup_Cmd); 
+    set_e_AD12VSC5Pwrup_Cmd(AD12VSC5Pwrup_Cmd); 
+    set_e_AD12VSC6Pwrup_Cmd(AD12VSC6Pwrup_Cmd); 
+    set_e_AD12VMCPwrdownCnfm_Cmd(AD12VMCPwrdownCnfm_Cmd); 
+    set_e_AD12VRCPwrdownCnfm_Cmd(AD12VRCPwrdownCnfm_Cmd); 
+    set_e_AD24VMCPwrdownCnfm_Cmd(AD24VMCPwrdownCnfm_Cmd); 
+    set_e_ADPA12VPwrdownCnfm_Cmd(ADPA12VPwrdownCnfm_Cmd); 
+    set_e_ADPA24VPwrdwnCnfm_Cmd(ADPA24VPwrdwnCnfm_Cmd); 
+    set_e_PwrCmd_RollCnt(PwrCmd_RollCnt); 
+    set_e_PwrCmd_Checksum(PwrCmd_Checksum); 
 }
 
 void ADCUPowerCmd117::Reset()

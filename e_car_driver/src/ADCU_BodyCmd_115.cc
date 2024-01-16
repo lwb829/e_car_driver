@@ -7,20 +7,20 @@ ADCUBodyCmd115::ADCUBodyCmd115() { Reset(); } // 在构造函数中调用了Rese
 
 void ADCUBodyCmd115::UpdateData(int LampCmd_Active, int HeadLamp_Cmd, int DblFlashLamp_Cmd, int TurnLLamp_Cmd, int TurnRLamp_Cmd, int BackLamp_Cmd, int Buzzer_Cmd, int Horn_Cmd, int RunLamp_Cmd, int BrkLamp_Cmd, int FogLamp_Cmd, int WidthLamp_Cmd, int LampCmd_RollCnt, int LampCmd_Checksum)
 {
-    set_e_LampCmd_Active(int LampCmd_Active); 
-    set_e_HeadLamp_Cmd(int HeadLamp_Cmd); 
-    set_e_DblFlashLamp_Cmd(int DblFlashLamp_Cmd); 
-    set_e_TurnLLamp_Cmd(int TurnLLamp_Cmd); 
-    set_e_TurnRLamp_Cmd(int TurnRLamp_Cmd); 
-    set_e_BackLamp_Cmd(int BackLamp_Cmd); 
-    set_e_Buzzer_Cmd(int Buzzer_Cmd); 
-    set_e_Horn_Cmd(int Horn_Cmd); 
-    set_e_RunLamp_Cmd(int RunLamp_Cmd); 
-    set_e_BrkLamp_Cmd(int BrkLamp_Cmd); 
-    set_e_FogLamp_Cmd(int FogLamp_Cmd); 
-    set_e_WidthLamp_Cmd(int WidthLamp_Cmd); 
-    set_e_LampCmd_RollCnt(int LampCmd_RollCnt); 
-    set_e_LampCmd_Checksum(int LampCmd_Checksum);
+    set_e_LampCmd_Active(LampCmd_Active); 
+    set_e_HeadLamp_Cmd(HeadLamp_Cmd); 
+    set_e_DblFlashLamp_Cmd(DblFlashLamp_Cmd); 
+    set_e_TurnLLamp_Cmd(TurnLLamp_Cmd); 
+    set_e_TurnRLamp_Cmd(TurnRLamp_Cmd); 
+    set_e_BackLamp_Cmd(BackLamp_Cmd); 
+    set_e_Buzzer_Cmd(Buzzer_Cmd); 
+    set_e_Horn_Cmd(Horn_Cmd); 
+    set_e_RunLamp_Cmd(RunLamp_Cmd); 
+    set_e_BrkLamp_Cmd(BrkLamp_Cmd); 
+    set_e_FogLamp_Cmd(FogLamp_Cmd); 
+    set_e_WidthLamp_Cmd(WidthLamp_Cmd); 
+    set_e_LampCmd_RollCnt(LampCmd_RollCnt); 
+    set_e_LampCmd_Checksum(LampCmd_Checksum);
 }
 
 void ADCUBodyCmd115::Reset()

@@ -7,26 +7,26 @@ ADCUCldPowerCmd11A::ADCUCldPowerCmd11A() { Reset(); } // 在构造函数中调�
 
 void ADCUCldPowerCmd11A::UpdateData(int CldVehPwrup_Cmd, int CldChasPwrup_Cmd, int Cld12VMCPwrup_Cmd, int Cld12VRCPwrup_Cmd, int Cld24VMCPwrup_Cmd, int CldPA12VPwrup_Cmd, int CldPA24VPwrup_Cmd, int Cld12VSC1Pwrup_Cmd, int Cld12VSC2Pwrup_Cmd, int Cld12VSC3Pwrup_Cmd, int Cld12VSC4Pwrup_Cmd, int Cld12VSC5Pwrup_Cmd, int Cld12VSC6Pwrup_Cmd, int Cld12VMCPwrdownCnfm_Cmd, int Cld12VRCPwrdownCnfm_Cmd, int Cld24VMCPwrdownCnfm_Cmd, int CldPA12VPwrdownCnfm_Cmd, int CldPA24VPwrdownCnfm_Cmd, int CldPwrCmd_RollCnt, int CldPwrCmd_Checksum)
 {
-    set_e_CldVehPwrup_Cmd(int CldVehPwrup_Cmd); 
-    set_e_CldChasPwrup_Cmd(int CldChasPwrup_Cmd); 
-    set_e_Cld12VMCPwrup_Cmd(int Cld12VMCPwrup_Cmd); 
-    set_e_Cld12VRCPwrup_Cmd(int Cld12VRCPwrup_Cmd); 
-    set_e_Cld24VMCPwrup_Cmd(int Cld24VMCPwrup_Cmd); 
-    set_e_CldPA12VPwrup_Cmd(int CldPA12VPwrup_Cmd); 
-    set_e_CldPA24VPwrup_Cmd(int CldPA24VPwrup_Cmd); 
-    set_e_Cld12VSC1Pwrup_Cmd(int Cld12VSC1Pwrup_Cmd); 
-    set_e_Cld12VSC2Pwrup_Cmd(int Cld12VSC2Pwrup_Cmd); 
-    set_e_Cld12VSC3Pwrup_Cmd(int Cld12VSC3Pwrup_Cmd); 
-    set_e_Cld12VSC4Pwrup_Cmd(int Cld12VSC4Pwrup_Cmd); 
-    set_e_Cld12VSC5Pwrup_Cmd(int Cld12VSC5Pwrup_Cmd); 
-    set_e_Cld12VSC6Pwrup_Cmd(int Cld12VSC6Pwrup_Cmd); 
-    set_e_Cld12VMCPwrdownCnfm_Cmd(int Cld12VMCPwrdownCnfm_Cmd); 
-    set_e_Cld12VRCPwrdownCnfm_Cmd(int Cld12VRCPwrdownCnfm_Cmd); 
-    set_e_Cld24VMCPwrdownCnfm_Cmd(int Cld24VMCPwrdownCnfm_Cmd); 
-    set_e_CldPA12VPwrdownCnfm_Cmd(int CldPA12VPwrdownCnfm_Cmd); 
-    set_e_CldPA24VPwrdownCnfm_Cmd(int CldPA24VPwrdownCnfm_Cmd); 
-    set_e_CldPwrCmd_RollCnt(int CldPwrCmd_RollCnt); 
-    set_e_CldPwrCmd_Checksum(int CldPwrCmd_Checksum); 
+    set_e_CldVehPwrup_Cmd(CldVehPwrup_Cmd); 
+    set_e_CldChasPwrup_Cmd(CldChasPwrup_Cmd); 
+    set_e_Cld12VMCPwrup_Cmd(Cld12VMCPwrup_Cmd); 
+    set_e_Cld12VRCPwrup_Cmd(Cld12VRCPwrup_Cmd); 
+    set_e_Cld24VMCPwrup_Cmd(Cld24VMCPwrup_Cmd); 
+    set_e_CldPA12VPwrup_Cmd(CldPA12VPwrup_Cmd); 
+    set_e_CldPA24VPwrup_Cmd(CldPA24VPwrup_Cmd); 
+    set_e_Cld12VSC1Pwrup_Cmd(Cld12VSC1Pwrup_Cmd); 
+    set_e_Cld12VSC2Pwrup_Cmd(Cld12VSC2Pwrup_Cmd); 
+    set_e_Cld12VSC3Pwrup_Cmd(Cld12VSC3Pwrup_Cmd); 
+    set_e_Cld12VSC4Pwrup_Cmd(Cld12VSC4Pwrup_Cmd); 
+    set_e_Cld12VSC5Pwrup_Cmd(Cld12VSC5Pwrup_Cmd); 
+    set_e_Cld12VSC6Pwrup_Cmd(Cld12VSC6Pwrup_Cmd); 
+    set_e_Cld12VMCPwrdownCnfm_Cmd(Cld12VMCPwrdownCnfm_Cmd); 
+    set_e_Cld12VRCPwrdownCnfm_Cmd(Cld12VRCPwrdownCnfm_Cmd); 
+    set_e_Cld24VMCPwrdownCnfm_Cmd(Cld24VMCPwrdownCnfm_Cmd); 
+    set_e_CldPA12VPwrdownCnfm_Cmd(CldPA12VPwrdownCnfm_Cmd); 
+    set_e_CldPA24VPwrdownCnfm_Cmd(CldPA24VPwrdownCnfm_Cmd); 
+    set_e_CldPwrCmd_RollCnt(CldPwrCmd_RollCnt); 
+    set_e_CldPwrCmd_Checksum(CldPwrCmd_Checksum); 
 }
 
 void ADCUCldPowerCmd11A::Reset()
