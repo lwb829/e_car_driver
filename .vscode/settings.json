@@ -1,7 +1,15 @@
 {
-  "cmake.sourceDirectory": "E:/无人车项目/github仓库/e_car_driver/e_car_driver_msgs",
+  "cmake.sourceDirectory": "/home/lwb829/e_car_driver/src/can_msgs",
   "files.associations": {
     "algorithm": "cpp"
   },
-  "C_Cpp.errorSquiggles": "enabled"
+  "C_Cpp.errorSquiggles": "enabled",
+  "python.autoComplete.extraPaths": [
+    "/home/lwb829/e_car_driver/devel/lib/python2.7/dist-packages",
+    "/opt/ros/melodic/lib/python2.7/dist-packages"
+  ],
+  "python.analysis.extraPaths": [
+    "/home/lwb829/e_car_driver/devel/lib/python2.7/dist-packages",
+    "/opt/ros/melodic/lib/python2.7/dist-packages"
+  ]
 }
