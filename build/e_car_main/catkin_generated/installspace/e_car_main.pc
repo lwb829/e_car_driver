@@ -1,8 +1,0 @@
-prefix=/home/lwb829/e_car_driver/install
-
-Name: e_car_main
-Description: Description of e_car_main
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: can_msgs e_car_msgs roscpp std_msgs

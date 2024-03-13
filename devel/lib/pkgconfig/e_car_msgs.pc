@@ -1,8 +1,0 @@
-prefix=/home/lwb829/e_car_driver/devel
-
-Name: e_car_msgs
-Description: Description of e_car_msgs
-Version: 0.0.0
-Cflags: -I/home/lwb829/e_car_driver/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_generation message_runtime roscpp rospy std_msgs
